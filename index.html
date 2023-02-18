@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rozbudowana gra</title>
+	<style>
+		body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #222;
+		}
+
+		.square {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background-color: red;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: background-color 0.5s;
+		}
+
+		.square.clicked {
+			background-color: green;
+		}
+
+		.square.active {
+			background-color: yellow;
+		}
+
+		.timer {
+			color: #fff;
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+
+		#score {
+			color: #fff;
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+
+		#highscore {
+			color: #fff;
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+
+		.btn {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 1.2rem;
+			margin: 10px;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Rozbudowana gra</h1>
+	<div class="timer">30</div>
+	<div id="score">0</div>
+	<div id="highscore">Najlepszy wynik: 0</div>
+	<div id="game"></div>
+	<button id="start" class="btn">Start</button>
+	<button id="reset" class="btn">Reset</button>
+
+	<script src="script.js"></script>
+</body>
+</html>
